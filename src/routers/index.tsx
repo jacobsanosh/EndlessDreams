@@ -1,4 +1,4 @@
-import { HomeLayout } from "../Layouts/HomeLayout";
+import HomeLayout from "../Layouts/HomeLayout";
 import { createBrowserRouter } from "react-router-dom";
 
 const baseRouter = [

@@ -1,5 +1,11 @@
-import React from "react";
+import LandingPage from "./components/LandingPage";
 
-export const HomeLayout = () => {
-  return <div>HomeLayout</div>;
+const HomeLayout = () => {
+  return (
+    <div id="home-layout" className="w-ful h-full flex flex-col">
+      <LandingPage />
+    </div>
+  );
 };
+
+export default HomeLayout;
