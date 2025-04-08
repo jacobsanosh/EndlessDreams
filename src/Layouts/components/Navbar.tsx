@@ -3,7 +3,7 @@ import { useState } from "react";
 const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   return (
-    <div className="absolute w-full flex items-center justify-between  py-8 px-5 text-white font-medium text-2xl backdrop-blur-lg shadow-lg z-20">
+    <div className="fixed w-full flex items-center justify-between text-red-400  py-6 px-5  font-medium text-2xl backdrop-blur-lg shadow-lg z-20">
       <a href="/">
         <p>EndlessDreams</p>
       </a>
