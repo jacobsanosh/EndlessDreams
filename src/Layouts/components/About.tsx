@@ -20,7 +20,7 @@ const About = () => {
         </div>
       </div>
       <div className="w-1/2 flex flex-col justify-center text-left pl-10 gap-3">
-        <p className="font-medium text-4xl uppercase">About Us</p>
+        <p className="font-medium text-6xl uppercase">About Us</p>
         <p className="text-6xl text-black capitalize">
           Turning Dreams into reality
         </p>
