@@ -7,12 +7,9 @@ import Testimonial from "./components/Testimonial";
 
 const HomeLayout = () => {
   return (
-    <div
-      id="home-layout"
-      className="w-full min-h-screen flex flex-col relative overflow-auto scroll-smooth"
-    >
-      <LandingPage />
+    <div id="home-layout">
       <Navbar />
+      <LandingPage />
       <About />
       <Services />
       <Testimonial />
