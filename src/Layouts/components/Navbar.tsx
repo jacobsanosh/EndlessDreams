@@ -1,6 +1,7 @@
 import clsx from "clsx";
 import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -21,6 +22,7 @@ const Navbar = () => {
 
   return (
     <nav
+      id="home"
       className={clsx(
         "fixed top-0 left-0 right-0 z-50 shadow-md text-red-400",
         scrolled ? "bg-white  text-black" : "bg-transparent",
@@ -28,7 +30,16 @@ const Navbar = () => {
       )}
     >
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <div className="text-2xl font-bold">EndlessDreams</div>
+        <Link
+          to="/"
+          className="text-2xl font-bold hover:text-blue-500"
+          onClick={() => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+            setIsNavOpen(false);
+          }}
+        >
+          EndlessDreams
+        </Link>
         <button
           className="md:hidden"
           onClick={() => setIsNavOpen((prev) => !prev)}
@@ -41,8 +52,8 @@ const Navbar = () => {
           <a href="#about" className="hover:text-blue-500">
             About
           </a>
-          <a href="#portfolio" className="hover:text-blue-500">
-            Portfolio
+          <a href="#services" className="hover:text-blue-500">
+            Services
           </a>
           <a href="#contact" className="hover:text-blue-500">
             Contact
@@ -61,11 +72,11 @@ const Navbar = () => {
                 About
               </a>
               <a
-                href="#portfolio"
+                href="#services"
                 className="py-2 hover:text-blue-500"
                 onClick={() => setIsNavOpen(false)}
               >
-                Portfolio
+                Services
               </a>
               <a
                 href="#contact"

@@ -3,7 +3,10 @@ import about2 from "../../../public/images/about-2.jpg";
 import about3 from "../../../public/images/about-3.jpg";
 const About = () => {
   return (
-    <div className="gap-5 w-full flex flex-col justify-center items-center md:h-max bg-white text-red-300 sm:flex sm:flex-row sm:justify-between sm:items-center lg:mt-8 lg:p-20  md:mt-3 md:p-10 sm:mt-2 p-5 sm:gap-2">
+    <div
+      id="about"
+      className="gap-5 w-full flex flex-col justify-center items-center md:h-max bg-white text-red-300 sm:flex sm:flex-row sm:justify-between sm:items-center lg:mt-8 lg:p-20  md:mt-3 md:p-10 sm:mt-2 p-5 sm:gap-2"
+    >
       <div className="w-full sm:w-1/2 flex gap-3 sm:justify-start justify-center">
         <div className="w-full flex flex-col gap-3 items-center sm:items-start">
           <div className="hidden w-full sm:block sm:h-[150px]  md:h-[200px] lg:h-[250px] xl:h-[350px] xl:w-[350px] 2xl:h-[400px] 2xl:w-[400px] rounded-2xl overflow-hidden">

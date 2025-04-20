@@ -2,7 +2,7 @@ import about3 from "../../../public/images/about-3.jpg";
 
 const Services = () => {
   return (
-    <div className="w-full justify-center items-center m-auto">
+    <div id="services" className="w-full justify-center items-center m-auto">
       <div className="flex flex-col-reverse sm:flex-row  w-4/5 gap-10 m-auto mb-5 text-black sm:items-center items-start">
         <div className="w-full sm:w-1/2 flex flex-col gap-4 justify-center">
           <p className="font-medium text-4xl md:text-6xl">
