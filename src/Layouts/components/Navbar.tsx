@@ -24,15 +24,15 @@ const Navbar = () => {
     <nav
       id="home"
       className={clsx(
-        "fixed top-0 left-0 right-0 z-50 shadow-md text-red-400",
-        scrolled ? "bg-white  text-black" : "bg-transparent",
+        "fixed top-0 left-0 right-0 z-50 shadow-md text-mustard-500",
+        scrolled ? "bg-white  text-violet-700" : "bg-transparent",
         isNavOpen && "bg-white"
       )}
     >
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <Link
           to="/"
-          className="text-2xl font-bold hover:text-blue-500"
+          className="text-2xl font-bold hover:text-violet-600"
           onClick={() => {
             window.scrollTo({ top: 0, behavior: "smooth" });
             setIsNavOpen(false);
@@ -49,13 +49,13 @@ const Navbar = () => {
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex space-x-8">
-          <a href="#about" className="hover:text-blue-500">
+          <a href="#about" className="hover:text-violet-600">
             About
           </a>
-          <a href="#services" className="hover:text-blue-500">
+          <a href="#services" className="hover:text-violet-600">
             Services
           </a>
-          <a href="#contact" className="hover:text-blue-500">
+          <a href="#contact" className="hover:text-violet-600">
             Contact
           </a>
         </div>
@@ -66,21 +66,21 @@ const Navbar = () => {
             <div className="flex flex-col items-center py-4">
               <a
                 href="#about"
-                className="py-2 hover:text-blue-500"
+                className="py-2 hover:text-violet-600"
                 onClick={() => setIsNavOpen(false)}
               >
                 About
               </a>
               <a
                 href="#services"
-                className="py-2 hover:text-blue-500"
+                className="py-2 hover:text-violet-600"
                 onClick={() => setIsNavOpen(false)}
               >
                 Services
               </a>
               <a
                 href="#contact"
-                className="py-2 hover:text-blue-500"
+                className="py-2 hover:text-violet-600"
                 onClick={() => setIsNavOpen(false)}
               >
                 Contact

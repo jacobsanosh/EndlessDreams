@@ -1,4 +1,5 @@
 import About from "./components/About";
+import Contact from "./components/Contact";
 import Footer from "./components/footer";
 import LandingPage from "./components/LandingPage";
 import Navbar from "./components/Navbar";
@@ -13,6 +14,7 @@ const HomeLayout = () => {
       <About />
       <Services />
       <Testimonial />
+      <Contact/>
       <Footer />
     </div>
   );
