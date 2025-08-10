@@ -1,13 +1,10 @@
 const LandingPage = () => {
   return (
     <div 
-      className="w-full min-h-screen flex flex-col justify-center items-center text-gray-800 px-4 sm:px-6 lg:px-8 relative overflow-hidden"
+      className="w-full min-h-screen flex flex-col justify-center items-center text-gray-800 px-4 sm:px-6 lg:px-8 relative overflow-hidden bg-cover bg-center bg-no-repeat"
       style={{
         backgroundImage: 'url(/images/bg.jpg)',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-        backgroundAttachment: 'fixed'
+        backgroundAttachment: 'scroll'
       }}
     >
       {/* Overlay for better text readability */}
@@ -29,32 +26,6 @@ const LandingPage = () => {
         <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl leading-relaxed text-gray-200 max-w-2xl sm:max-w-3xl transition-all duration-300 hover:text-white">
           Turning dreams into reality
         </p>
-        
-        {/* Scroll Indicator */}
-        <div className="absolute bottom-8 sm:bottom-12 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <div className="flex flex-col items-center space-y-2 text-white opacity-70 hover:opacity-100 transition-opacity duration-300 cursor-pointer"
-               onClick={() => {
-                 const aboutSection = document.getElementById('about');
-                 if (aboutSection) {
-                   aboutSection.scrollIntoView({ behavior: 'smooth' });
-                 }
-               }}>
-            <span className="text-xs sm:text-sm font-medium">Scroll Down</span>
-            <svg 
-              className="w-5 h-5 sm:w-6 sm:h-6" 
-              fill="none" 
-              stroke="currentColor" 
-              viewBox="0 0 24 24"
-            >
-              <path 
-                strokeLinecap="round" 
-                strokeLinejoin="round" 
-                strokeWidth={2} 
-                d="M19 14l-7 7m0 0l-7-7m7 7V3" 
-              />
-            </svg>
-          </div>
-        </div>
       </div>
       
       {/* Decorative Elements */}

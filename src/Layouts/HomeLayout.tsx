@@ -11,10 +11,20 @@ const HomeLayout = () => {
     <div id="home-layout">
       <Navbar />
       <LandingPage />
+
+      <div className="block sm:hidden w-full mx-auto border-t border-gray-200 my-1"></div>
       <About />
+
+      <div className="block sm:hidden w-full mx-auto border-t border-gray-200 my-1"></div>
       <Services />
+
+      <div className="block sm:hidden w-full mx-auto border-t border-gray-200 my-1"></div>
       <Testimonial />
+
+      <div className="block sm:hidden w-full mx-auto border-t border-gray-200 my-1"></div>
       <Contact/>
+
+
       <Footer />
     </div>
   );
